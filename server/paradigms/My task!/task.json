@@ -1,0 +1,51 @@
+{
+  "Task_1": {
+    "title": "Baseline",
+    "description": "No task or processing",
+    "executables": {
+      "processing": null,
+      "application": null
+    },
+    "addParameters": [],
+    "setParameters": {},
+    "loadParameters": [],
+    "addEvents": [],
+    "addStates": [],
+    "userPrompt": [],
+    "Blocks": {
+      "Block_1": {
+        "title": "Run baseline recording",
+        "loadParameters": []
+      }
+    }
+  },
+  "Task_2": {
+    "title": "Run your task",
+    "description": "Let's try Stimulus Presentation",
+    "executables": {
+      "processing": "P3SignalProcessing",
+      "application": "StimulusPresentation"
+    },
+    "addParameters": [],
+    "setParameters": {
+        "AudioSwitch": "0",
+        "WindowLeft": "600"
+    },
+    "loadParameters": ["../parms/examples/StimulusPresentation_SignalGenerator.prm"],
+    "addEvents": [],
+    "addStates": [],
+    "userPrompt": [],
+    "Blocks": {
+      "Block_1": {
+        "title": "Run default task",
+        "loadParameters": []
+      },
+      "Block_2": {
+        "title": "Run with fun images",
+        "loadParameters": [
+            "../parms/examples/StimulusPresentation_Images.prm"
+        ]
+      }
+    }
+  }
+}
